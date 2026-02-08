@@ -1,0 +1,63 @@
+const employeeWorkLog = {
+  employeeId: "E001",
+  employeeName: "রাকিব হাসান",
+  date: "2023-10-26",
+  
+  dailySummary: {
+    totalWorkHours: 8.5,
+    activePeriods: [
+      { start: "09:00 AM", end: "01:00 PM", duration: 4 },
+      { start: "02:00 PM", end: "06:30 PM", duration: 4.5 }
+    ],
+    currentStatus: "active", // "active", "inactive", "break", "offline"
+    lastActive: "2023-10-26 06:30 PM"
+  },
+  
+  workTasks: [
+    {
+      taskId: "T001",
+      projectName: "ক্লায়েন্ট A - ইকমার্স সাইট",
+      taskDescription: "হোমপেজ প্রডাক্ট সেকশন ডিজাইন",
+      startTime: "09:30 AM",
+      endTime: "11:45 AM",
+      duration: 2.25, // ঘন্টায়
+      status: "completed", // "ongoing", "completed", "pending"
+      details: "রেস্পন্সিভ ডিজাইন সম্পন্ন, ক্যারোসেল স্লাইডার যোগ করা"
+    },
+    {
+      taskId: "T002",
+      projectName: "ক্লায়েন্ট B - ল্যান্ডিং পেজ",
+      taskDescription: "ফর্ম ভ্যালিডেশন লজিক ইমপ্লিমেন্ট",
+      startTime: "12:00 PM",
+      endTime: "01:00 PM",
+      duration: 1,
+      status: "completed",
+      details: "ইমেইল এবং ফোন ভ্যালিডেশন যোগ করা, এরর মেসেজ স্টাইলিং"
+    },
+    {
+      taskId: "T003",
+      projectName: "ক্লায়েন্ট A - ইকমার্স সাইট",
+      taskDescription: "চেকআউট পেজ ডিবাগিং",
+      startTime: "02:30 PM",
+      endTime: "04:00 PM",
+      duration: 1.5,
+      status: "ongoing",
+      details: "পেমেন্ট গেটওয়ে কানেকশন ইস্যু সমাধান করা হচ্ছে"
+    }
+  ],
+  
+  productivityMetrics: {
+    tasksCompleted: 2,
+    ongoingTasks: 1,
+    breakTime: 1, // ঘন্টায়
+    efficiencyRating: 4.5 // 5 স্কেল এ
+  },
+  
+  notes: "কালকে থেকে ক্লায়েন্ট A এর প্রজেক্টে ফোকাস করব। সারাদিন ভালো কাজ হয়েছে।",
+  
+  submissionInfo: {
+    submittedBy: "রাকিব হাসান",
+    submissionTime: "2023-10-26 06:35 PM",
+    verified: false // ম্যানেজার ভেরিফিকেশনের জন্য
+  }
+};
