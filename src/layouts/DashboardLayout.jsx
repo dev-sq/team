@@ -1,4 +1,5 @@
 import React from "react";
+import ActivityTrackerLogo from "../sharedComponents/ActivityTrackerLogo";
 
 const DashboardLayout = () => {
   return (
@@ -40,8 +41,13 @@ const DashboardLayout = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
+
+        <div>
+          <ActivityTrackerLogo></ActivityTrackerLogo>
+        </div>
         <ul className="menu bg-base-200 min-h-full w-80 p-4">
           {/* Sidebar content here */}
+
           <li>
             <a>Sidebar Item</a>
           </li>
